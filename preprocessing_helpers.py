@@ -5,6 +5,7 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 
 
+nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 stemmer = PorterStemmer()
 lemma = WordNetLemmatizer()
