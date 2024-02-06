@@ -2,3 +2,5 @@
 /archive.zip
 /__pycache__
 data/Amazon_Unlocked_Mobile.csv
+/.idea
+/utils/__pycache__

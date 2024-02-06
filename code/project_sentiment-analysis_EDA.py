@@ -2,7 +2,7 @@
 import pandas as pd
 from utils import preprocessing_helpers as preprocessing_helpers
 
-dataset = pd.read_csv("data/Amazon_Unlocked_Mobile.csv", index_col=False)
+dataset = pd.read_csv("../data/Amazon_Unlocked_Mobile.csv", index_col=False)
 
 
 dataset = dataset[['Rating', 'Reviews']]

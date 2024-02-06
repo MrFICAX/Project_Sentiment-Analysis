@@ -4,7 +4,7 @@ from utils import preprocessing_helpers as preprocessing_helpers
 
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 
-dataset = pd.read_csv("data/Amazon_Unlocked_Mobile.csv", index_col=False)
+dataset = pd.read_csv("../data/Amazon_Unlocked_Mobile.csv", index_col=False)
 
 
 dataset = dataset[['Rating', 'Reviews']]
