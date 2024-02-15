@@ -4,3 +4,5 @@
 data/Amazon_Unlocked_Mobile.csv
 /.idea
 /utils/__pycache__
+code/aclImdb
+code/aclImdb_v1.tar.gz
