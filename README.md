@@ -5,3 +5,6 @@ Project_Sentiment-Analysis
 ## For entering venv in terminal on Windows
 
 .venv/Scripts/activate.ps1
+
+libs:
+- pip install ipykernel, pandas, matplotlib, seaborn, scikit-learn, nltk, transformers, tensorflow
