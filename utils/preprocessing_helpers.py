@@ -1,12 +1,13 @@
 import re
-from typing import List, Any
-
+from typing import Any
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, WordNetLemmatizer
+import matplotlib.pyplot as plt
 
 nltk.download('stopwords')
+
 stop_words = set(stopwords.words('english'))
 stemmer = PorterStemmer()
 lemma = WordNetLemmatizer()
@@ -63,30 +64,3 @@ def Remove_short_words(review_text: str) -> list[str]:
 
 def Convert_list_of_tokens_to_string(reviews_list: list) -> str:
     return ' '.join(reviews_list)
-
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-
-def get_num_words_per_sample(sample_texts):
-    """Returns the median number of words per sample given corpus.
-
-    # Arguments
-        sample_texts: list, sample texts.
-
-    # Returns
-        int, median number of words per sample.
-    """
-    num_words = [len(s.split()) for s in sample_texts]
-    plt.hist(num_words)
-    plt.xlabel('Length of a sample')
-    plt.ylabel('Number of samples')
-    plt.title('Sample length distribution')
-    plt.show()
-
-    # return np.median(num_words)
-
-
-
-
