@@ -1,4 +1,6 @@
 /.venv
+
+distilbert-base-uncased-finetune
 /archive.zip
 /__pycache__
 data/Amazon_Unlocked_Mobile.csv
